@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}connexion
+{% endblock %}
+
+{% block body %}
+	
+		<div class="offcanvas-overlay"></div>
+
+		<!-- ...:::: Start Breadcrumb Section:::... -->
+		<div class="breadcrumb-section breadcrumb-bg-color--golden">
+			<div class="breadcrumb-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h3 class="breadcrumb-title">creer un compte</h3>
+							<div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+								<nav aria-label="breadcrumb">
+									<ul>
+										<li>
+											<a href="">Home</a>
+										</li>
+										<li>
+											<a href="">Shop</a>
+										</li>
+										<li class="active" aria-current="page">tu as un compte</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ...:::: End Breadcrumb Section:::... -->
+
+		<!-- ...:::: Start Customer Login Section :::... -->
+		<div class="customer-login">
+			<div class="container">
+				<div
+					class="row">
+					<!--login area start-->
+					<div class="col-lg-6 col-md-6 mx-auto">
+						<div class="account_form" data-aos="fade-up" data-aos-delay="0">
+							<h3>creer le compte</h3>
+						</div>
+						di
+                        {{form(form)}}
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

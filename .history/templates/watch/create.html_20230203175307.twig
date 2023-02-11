@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WatchController!
+{% endblock %}
+
+{% block body %}
+
+
+<div class="col-md-6 mx-auto">
+{{form(form)}}
+</div>
+
+
+	{% endblock %}
+	{% block javascripts %}
+			{{ encore_entry_script_tags('app') }}
+			<script src="assets/js/vendor/vendor.min.js"></script>
+			<script src="assets/js/plugins/plugins.min.js"></script>
+
+			<!-- Main JS -->
+			<script src="assets/js/main.js"></script>
+		{% endblock %}
