@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CardController!
+{% endblock %}
+
+{% block body %}
+	<div class="text-center">
+		votre panier
+	</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Produit</th>
+				<th>Prix</th>
+				<th>Quantite</th>
+				<th>Total</th>
+				<th>Actions</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for element in dataPanier %}
+
+				<tr> </tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>
+
+			{% else %}
+				<tr>
+					<td colspan="5" class="text-center">
+						votre  panier est vide
+					</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% endblock %}
