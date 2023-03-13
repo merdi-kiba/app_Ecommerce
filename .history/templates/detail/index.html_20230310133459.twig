@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DetailController!{% endblock %}
+
+{% block body %}
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+<div class="breadcrumb-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="breadcrumb-title">Product Details - Default</h3>
+                <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                    <nav aria-label="breadcrumb">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-grid-sidebar-left.html">Shop</a></li>
+                            <li class="active" aria-current="page">Product Details Default</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> <!-- ...:::: End Breadcrumb Section:::... -->
+
+<!-- Start Product Details Section -->
+<div class="product-details-section">
+<div class="container">
+    <div class="row">
+        <div class="col-xl-5 col-lg-6">
+            <div class="product-details-gallery-area" >
+                <!-- Start Large Image -->
+                <div class="product-large-image product-large-image-horaizontal swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="product-image-large-image swiper-slide zoom-image-hover img-responsive">
+                            <img src="assets/images/product/default/home-1/default-1.jpg" alt="">
+                            <img  src="{{ vich_uploader_asset(watch, 'imageFile') }}">
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- End Large Image -->
+                <!-- Start Thumbnail Image -->
+               
+                <!-- End Thumbnail Image -->
+            </div>
+        </div>
+        <div class="col-xl-7 col-lg-6">
+            <div class="product-details-content-area product-details--golden" >
+                <!-- Start  Product Details Text Area-->
+                <div class="product-details-text">
+                    <h4 class="title">{{watch}} </h4>
+                    <div class="d-flex align-items-center">
+                        <ul class="review-star">
+                            <li class="fill"><i class="ion-android-star"></i></li>
+                            <li class="fill"><i class="ion-android-star"></i></li>
+                            <li class="fill"><i class="ion-android-star"></i></li>
+                            <li class="fill"><i class="ion-android-star"></i></li>
+                            <li class="empty"><i class="ion-android-star"></i></li>
+                        </ul>
+                        <a href="#" class="customer-review ml-2">(customer review )</a>
+                    </div>
+                    <div class="price">$80.00</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est
+                        tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis
+                        justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id
+                        nulla.</p>
+                </div> <!-- End  Product Details Text Area-->
+                <!-- Start Product Variable Area -->
+                <!-- End Product Variable Area -->
+
+                <!-- Start  Product Details Catagories Area-->
+                 <!-- End  Product Details Catagories Area-->
+                <!-- Start  Product Details Social Area-->
+                <div class="product-details-social">
+                    <span class="title">SHARE THIS PRODUCT:</span>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div> <!-- End  Product Details Social Area-->
+            </div>
+        </div>
+    </div>
+</div>
+</div> <!-- End Product Details Section -->
+
+{% endblock %}
